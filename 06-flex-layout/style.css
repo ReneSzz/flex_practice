@@ -3,7 +3,7 @@
 body {
   height: 100vh;
   margin: 0;
-  
+  overflow: hidden;
   font-family: Roboto, sans-serif;
 }
 
@@ -33,22 +33,33 @@ Solution
 */
 
 .container{
-  margin-top: 250px;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  
+  align-items: center; 
+ 
+  
 }
 
 .header { 
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-grow: 1;
-  flex-shrink: 0;
+  width: 100%;
+  
   
 }
 
-
+.content {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 button{ 
   padding: 8px;
   
@@ -66,20 +77,25 @@ ul li {
   margin-right: 16px;
   list-style: none;
   display: inline-table;
+  
 }
 
 .footer
 { 
   background-color: #eeeeee;
-  margin-top: 350px;
+  
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
-  flex-shrink: 0;
+  align-items: center;
+  width: 100%;
+  
+ 
 }
 
 
 .right-links {
+  display: flex;
+  justify-content: space-between;
 
   margin-right: 32px;
 }
